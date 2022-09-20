@@ -1,0 +1,117 @@
+<table cellpadding="0" cellspacing="0" class="ng-scope"
+    style="border-spacing: 0px; border-collapse: collapse; color: rgb(68, 68, 68); width: 525px; font-size: 11pt; font-family: Arial, sans-serif;">
+    <tbody style="box-sizing: border-box;">
+        <tr style="box-sizing: border-box;">
+            <td ng-if="showField('logo')" width="125" valign="top" rowspan="6" class="ng-scope"
+                style="box-sizing: border-box; padding: 0px 10px 0px 0px; font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid rgb(251, 99, 3); width: 125px; vertical-align: top;">
+                <img ng-if="!showField('logoURL')" border="0" alt="Logo" width="105"
+                    ng-src="https://i.postimg.cc/hGt9F9Tt/profile.png" class="ng-scope"
+                    src="https://i.postimg.cc/hGt9F9Tt/profile.png"
+                    style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 105px; height: auto;">
+            </td>
+            <td style="box-sizing: border-box; padding: 0px 0px 0px 10px;">
+                <table cellpadding="0" cellspacing="0"
+                    style="border-spacing: 0px; border-collapse: collapse; background-color: transparent;">
+                    <tbody style="box-sizing: border-box;">
+                        <tr style="box-sizing: border-box;">
+                            <td valign="top"
+                                style="box-sizing: border-box; padding: 0px 0px 5px 10px; font-size: 10pt; color: rgb(0, 121, 172); font-family: Arial, sans-serif; width: 400px; vertical-align: top;">
+                                <span style="box-sizing: border-box; font-weight: 700;"><span class="ng-binding"
+                                        style="box-sizing: border-box; font-size: 11pt; color: rgb(251, 99, 3);">S A
+                                        Shakil</span></span>&nbsp;<span ng-if="showField('title')"
+                                    class="ng-binding ng-scope"
+                                    style="box-sizing: border-box; font-weight: 700; font-size: 11pt; color: rgb(0, 0, 0);"><span
+                                        ng-if="isAnyFieldEntered('firstName, lastName')" class="ng-scope"
+                                        style="box-sizing: border-box;">|&nbsp;</span>Graphic &amp; Web Designer</span>
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box;">
+                            <td valign="top"
+                                style="box-sizing: border-box; padding: 5px 0px 5px 10px; font-size: 10pt; font-family: Arial, sans-serif; vertical-align: top; line-height: 17px;">
+                                <span ng-if="isAnyFieldEntered('company,address1,address2')" class="ng-scope"
+                                    style="box-sizing: border-box;"><span
+                                        style="box-sizing: border-box; color: rgb(251, 99, 3);"><span
+                                            style="box-sizing: border-box; font-weight: 700;">a:&nbsp;</span></span></span><span
+                                    ng-if="isAnyFieldEntered('address1,address2')" class="ng-scope"
+                                    style="box-sizing: border-box;"><span ng-if="showField('address1')"
+                                        class="ng-binding ng-scope"
+                                        style="box-sizing: border-box; font-size: 10pt; color: rgb(0, 0, 0);">Abhaynagar,
+                                        Jashore<span ng-if="showField('address2')" class="ng-scope"
+                                            style="box-sizing: border-box;"></span></span>&nbsp;<span
+                                        ng-if="showField('address2')" class="ng-binding ng-scope"
+                                        style="box-sizing: border-box; font-size: 10pt; color: rgb(0, 0, 0);"><span
+                                            ng-if="isAnyFieldEntered('company,address1')" class="ng-scope"
+                                            style="box-sizing: border-box;">|&nbsp;</span>7400,
+                                        Bangladesh</span></span><span ng-if="isAnyFieldEntered('email,website')"
+                                    class="ng-scope" style="box-sizing: border-box;"><br
+                                        style="box-sizing: border-box;"></span><span ng-if="showField('email')"
+                                    class="ng-scope" style="box-sizing: border-box;"><span
+                                        style="box-sizing: border-box; color: rgb(251, 99, 3);"><span
+                                            style="box-sizing: border-box; font-weight: 700;">e:</span></span><span
+                                        class="ng-binding"
+                                        style="box-sizing: border-box; font-size: 10pt; color: rgb(0, 0, 0);">&nbsp;info.sashakil@gmail.com</span></span><span
+                                    ng-if="isAnyFieldEntered('mobile,phone')" class="ng-scope"
+                                    style="box-sizing: border-box;"><br style="box-sizing: border-box;"></span><span
+                                    ng-if="showField('mobile')" class="ng-scope" style="box-sizing: border-box;"><span
+                                        style="box-sizing: border-box; color: rgb(251, 99, 3);"><span
+                                            style="box-sizing: border-box; font-weight: 700;">m:</span></span><span
+                                        class="ng-binding"
+                                        style="box-sizing: border-box; font-size: 10pt; color: rgb(0, 0, 0);">&nbsp;+8801634676787</span></span>&nbsp;<span
+                                    ng-if="showField('phone')" class="ng-scope" style="box-sizing: border-box;"><span
+                                        ng-if="showField('mobile')" class="ng-scope"
+                                        style="box-sizing: border-box;">|&nbsp;</span><span
+                                        style="box-sizing: border-box; color: rgb(251, 99, 3);"><span
+                                            style="box-sizing: border-box; font-weight: 700;">p:</span></span><span
+                                        class="ng-binding"
+                                        style="box-sizing: border-box; font-size: 10pt; color: rgb(0, 0, 0);">&nbsp;+8801924158822</span></span>
+                            </td>
+                        </tr>
+                        <tr ng-if="isAnyFieldEntered('facebookURL,twitterURL,youtubeURL,linkedinURL,instagramURL')"
+                            class="ng-scope" style="box-sizing: border-box;">
+                            <td valign="bottom"
+                                style="box-sizing: border-box; padding: 5px 0px 0px 10px; font-size: 10pt; font-family: Arial, sans-serif; vertical-align: bottom;">
+                                <span ng-if="showField('facebookURL')" class="ng-scope"
+                                    style="box-sizing: border-box;"><a
+                                        href="https://www.facebook.com/sahariarahmmadshakil" target="_blank"
+                                        rel="noopener"
+                                        style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;"><img
+                                            border="0" width="19"
+                                            ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/fb.png"
+                                            alt="facebook icon"
+                                            src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/fb.png"
+                                            style="box-sizing: border-box; border: 0px; vertical-align: middle; height: 19px; width: 19px;"></a>&nbsp;</span><span
+                                    ng-if="showField('twitterURL')" class="ng-scope" style="box-sizing: border-box;"><a
+                                        href="https://twitter.com/sahariarahmmad" target="_blank" rel="noopener"
+                                        style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;"><img
+                                            border="0" width="19"
+                                            ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/tt.png"
+                                            alt="twitter icon"
+                                            src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/tt.png"
+                                            style="box-sizing: border-box; border: 0px; vertical-align: middle; height: 19px; width: 19px;"></a>&nbsp;</span><span
+                                    ng-if="showField('linkedinURL')" class="ng-scope" style="box-sizing: border-box;"><a
+                                        href="https://www.linkedin.com/in/sahariarahmmadshakil/" target="_blank"
+                                        rel="noopener"
+                                        style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;"><img
+                                            border="0" width="19"
+                                            ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/ln.png"
+                                            alt="linkedin icon"
+                                            src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/ln.png"
+                                            style="box-sizing: border-box; border: 0px; vertical-align: middle; height: 19px; width: 19px;"></a>&nbsp;</span><span
+                                    ng-if="showField('instagramURL')" class="ng-scope"
+                                    style="box-sizing: border-box;"><a
+                                        href="https://www.instagram.com/sahariarahmmadshakil/" target="_blank"
+                                        rel="noopener"
+                                        style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;"><img
+                                            border="0" width="19"
+                                            ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/it.png"
+                                            alt="instagram icon"
+                                            src="https://www.mail-signatures.com/signature-generator/img/templates/bease-fox/it.png"
+                                            style="box-sizing: border-box; border: 0px; vertical-align: middle; height: 19px; width: 19px;"></a>&nbsp;</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
